@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --black:#222;
+    --white:#fff;
+    --blue:#3333f4;
+    --white-blue:#acd0ed;
+    --light-black:#777;
+    --light-white:#fff9;
+    --dark-bg:rgba(0,0,0,.7);
+    --light-bg:#eee;
+    --border:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+    
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    z-index: 999;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+    
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    border-radius: 2rem;
+
+}
+
+section{
+    padding: 5rem 10%;
+}
+
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--black);
+}
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: var(--black);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-right: 7rem;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--white-blue);
+    width: 5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.header .navbar a,select{
+    font-size: 2rem;
+    margin-left: 5rem;
+    color: var(--white-blue);
+    text-decoration: none;
+    background-color: var(--black);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.header .navbar{
+   text-align: right;
+}
+
+
+
+
+
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 5rem;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+}
+
+.about .describtion{
+    flex: 1 1 41rem;
+    margin-bottom: 15rem;
+}
+
+.about .describtion .image {
+    flex: 1 1 41rem;
+    position: absolute;
+    margin-bottom: 1.2rem;
+    
+}
+
+.about .describtion .image img{
+    width: 60%;
+    border-radius: 2rem;
+
+}
+
+.about .describtion .info {
+    margin-bottom: 7rem;
+    flex: 1 1 41rem;
+    text-align: center;
+    margin-left: 32rem;
+}
+
+
+.about .describtion .info p{
+    font-size:  1.4rem;
+    text-align: justify;
+    
+
+}
+
+.about .describtion .info p span{
+    font-weight:600 ;
+
+}
+
+
+
+.about .content{
+    margin-bottom: 10rem;
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+
+.about .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    text-align: left;
+}
+
+.about .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+
+
+
+
+.progress-section .progress{
+    margin-bottom: 3rem;
+}
+
+.about h2{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.progress-section h4{
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+
+
+.services p{
+    text-align: center;
+}
+
+
+.services .line{
+    margin: auto;
+    margin-top: 3.1rem;
+    background-color: var(--blue);
+    width: 6rem;
+    padding-bottom: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services .box-container{
+    width: 100%;
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+
+.services .box-container .box{
+    box-shadow: var(--box-shadow);
+    background:var(--white);
+    align-items: center; /* Center items vertically */
+    display: inline-block;
+
+}
+
+
+.services .box-container .box .cir{
+
+width: 20rem; 
+height: 20rem;
+padding: 5rem; 
+background-color: whitesmoke; 
+border-radius: 100%;
+margin: auto; 
+border-color: blue;
+border-width: 1rem; 
+border-style: solid;
+}
+
+.services .box-container .box .cir span{
+
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    
+ 
+    }
+
+
+.services .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+
+
+.services .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+
+.services .box-container .box .image img{
+    height:auto;
+    max-width:100%;
+    object-fit: cover;
+    transition: .2s linear;
+    width: 55%;
+}
+
+
+.services .box-container .box .content{
+    padding:2rem;
+    text-align: center ;
+}
+
+
+.services .box-container .box .content .price{
+    background-color: #ffd700;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.services .box-container .box .content .price .price-num{
+    margin-right: auto;
+}
+
+.services .box-container .box .content .price .food{
+    color: rgb(115, 9, 9);
+    font-weight: 600;
+}
+
+.services .box-container .box .content .box-buttons{
+    display: flex;
+    margin-left: auto;
+}
+
+.services .box-container .box .content .box-buttons .btn{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 50%; 
+    text-align: center;
+    background-color: #f4510b;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+}
+.services .box-container .box .content .box-buttons .btn:hover{
+    box-shadow: 0px 4px 4px rgba(36, 36, 33, 0.496);
+
+}
+.services .box-container .box .content .box-buttons .menu{
+     width: 30%;
+     background-color: transparent;
+     border-color: gold;
+     border-style: dashed;
+     border-width: 0.2rem;
+     color: #f4510b;
+}
+
+.services .box-container .box .content .box-buttons .menu:hover{
+     background-color: black;
+     box-shadow: none;
+     border: black ;
+     color: white;
+}
+.services .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.services .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
